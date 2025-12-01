@@ -80,7 +80,7 @@ C:.
 
 ## 🌐 Live Demo
 
-**Vercel Deployment:** [https://design-replica-one.vercel.app/](https://design-replica-one.vercel.app/)
+**Vercel Deployment:** [Vercel Deployment Link](https://design-replica-1.vercel.app/)
 
 ---
 
