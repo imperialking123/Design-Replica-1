@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+.tooltip-arrow-left:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+
+  /* 1. New arrow width */
+  left: -4px; /* 6px is the new width of the arrow */
+
+  /* 2. New half-height (6px total height / 2 = 3px) */
+  margin-top: -3px;
+
+  width: 0;
+  height: 0;
+
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+
+  /* 4. New arrow width for border */
+  border-right: 6px solid #0f0f0f;
+}
+
+.graphLine {
+  width: 99%;
+  height: 1px;
+  background: #dbdee5;
+  position: relative;
+}
+
+.graphLine::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #dbdee5;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+
+  transform: translate(50%, -50%);
+}
+
+.graphLine::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #dbdee5;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+
+  transform: translate(-50%, -50%);
+}
